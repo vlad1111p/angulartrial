@@ -1,0 +1,9 @@
+<h1>{{artist.name}}</h1>
+
+
+
+<app-song *ngFor="let song of artist.songs" [song]=song></app-song><br><br>
+<!-- <button (click)="increaseArtistLike()">upvote artist</button> -->
+<p>Total {{artist.name}} likes: {{artist.likes}}</p>
+<button (click)="increaseArtistLike()">like</button>
+<button (click)="decreaseArtistLike()">dislike</button>
