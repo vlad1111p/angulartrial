@@ -10,6 +10,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ArtistsListComponent } from './artists-list/artists-list.component';
 import { ArtistFormComponent } from './artist-form/artist-form.component';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
